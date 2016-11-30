@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>SomaGrandOpening</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +10,13 @@
   </head>
 
   <body>
+    <div class="container">
+
+    <ul class="nav nav-tabs">
+    	<li><%= link_to "APR SoMa Grand Opening", welcome_index_path %> </li>
+    	<li> <%= link_to "Questions?", welcome_contact_path %> </li>
+    </ul>
     <%= yield %>
   </body>
+  </div>
 </html>
